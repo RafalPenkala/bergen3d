@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatibile" name="IE=edge,chrome=1"/>
+	<title>Rafal Penkala - 3D Artist Portfolio</title>
+	<meta name="description" content="It's Rafal's Penkala Portfolio website. A rookie 3D Artist.">
+	<meta name="keywords" content="3d, artist, portfolio, Rafal, Rafał, Penkala, modeling, 3ds max, V-ray, architectural, design">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/fontello.css"/>
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="jquery.scrollTo.min.js"></script>
+	<script src="menu.js"></script>
+	<script src="lightbox.min.js"></script>
+
+
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+		
+			$('#link1').click(function() { $.scrollTo($('#logo'), 500); });
+			$('#link2').click(function() { $.scrollTo($('#about'), 500); });
+			$('#link3').click(function() { $.scrollTo($('.photos'), 500); });
+			$('#link4').click(function() { $.scrollTo($('#contact'), 500); });
+
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+
+				//pokaż podczas przewijania
+			$(window).scroll(function()
+			{
+				if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+				else $('.scrollup').fadeOut();		
+			}
+			);
+
+		}
+		);
+	</script>
+</head>
+<body>
+
+<div id="container">
+
+	<div id="nav">
+		<a class="dropdown-menu"></a>
+		<ul class="menu">
+			<li> <a id="link1" href="#">HOME</a></li>
+			<li> <a id="link2" href="#">ABOUT</a></li>
+			<li> <a id="link3" href="#">PORTFOLIO</a></li>
+			<li> <a id="link4" href="#">CONTACT</a></li>
+		</ul>
+	</div>
+
+	<div id="logo">
+		<div id="artist">
+			RAFAL PENKALA
+			<br>
+			<small><small>3d Artist</small></small>
+		</div>
+	</div>
+
+	<div id="about">
+		<div class="tophead">About me</div>
+			<div class="text">
+			<br>
+			<hr size="1" width="30" noshade color="black" align="left">
+			<br>
+			<p>Passionate about 3D modeling but still a rookie in that matter. Once developing my skills on a 3D design and Animation online studies at NOROFF University.
+			<br><br>
+			I'm interested mostly in architectural visualizations but I don't exclude any other forms of computer graphic on my development path.</p>
+		</div>
+	</div>
+
+	<div class="photos">
+
+		<div class="projects">
+			<a href="img/img_02.jpg" data-lightbox="gallery" data-title="Attic Night 02"><img class="myImg" src="img/img_02_small.jpg" width="320" height="240"/></a>
+		</div>
+			
+		<div class="projects">
+			<a href="img/img_03.jpg" data-lightbox="gallery" data-title="Attic Sunny 01"><img class="myImg" src="img/img_03_small.jpg" width="320" height="240"/></a>
+		</div>
+
+		<div class="projects">
+			<a href="img/img_04.jpg" data-lightbox="gallery" data-title="Attic Sunny 02"><img class="myImg" src="img/img_04_small.jpg" width="320" height="240"/></a>
+		</div>
+
+		<div class="projects">	
+			<a href="img/img_05.jpg" data-lightbox="gallery" data-title="Attic Clay render"><img class="myImg" src="img/img_05_small.jpg" width="320" height="240"/></a>
+		</div>
+
+		<div class="projects">
+			<a href="img/img_06.jpg" data-lightbox="gallery" data-title="Beer Garder 01"><img class="myImg" src="img/img_06_small.jpg" width="320" height="240"/></a>
+		</div>
+
+		<div class="projects">
+			<a href="img/img_07.jpg" data-lightbox="gallery" data-title="Beer Garder 02"><img class="myImg" src="img/img_07_small.jpg" width="320" height="240"/></a>
+		</div>
+
+		<div class="projects">
+			<a href="img/img_08.jpg" data-lightbox="gallery" data-title="Beer Garder 03"><img class="myImg" src="img/img_08_small.jpg" width="320" height="240"/></a>
+		</div>
+
+		<div class="projects">
+			<a href="img/img_09.jpg" data-lightbox="gallery" data-title="Beer Garder 04"><img class="myImg" src="img/img_09_small.jpg" width="320" height="240"/></a>
+		</div>
+
+		<div class="projects">
+			<a href="img/img_10.jpg" data-lightbox="gallery" data-title="Kitchen 01"><img class="myImg" src="img/img_10_small.jpg" width="320" height="240"/></a>
+		</div>
+
+		<div class="projects">
+			<a href="img/img_11.jpg" data-lightbox="gallery" data-title="Kitchen 02"><img class="myImg" src="img/img_11_small.jpg" width="320" height="240"/></a>
+		</div>
+
+		<div class="projects">
+			<a href="img/img_12.jpg" data-lightbox="gallery" data-title="Lamp"><img class="myImg" src="img/img_12_small.jpg" width="320" height="240"/></a>
+		</div>
+
+		<div class="projects">
+			<a href="img/img_13.jpg" data-lightbox="gallery" data-title="Bike Clay render high-poly"><img class="myImg" src="img/img_13_small.jpg" width="320" height="240"/></a>
+		</div>
+
+		<div class="projects">
+			<a href="img/img_14.jpg" data-lightbox="gallery" data-title="Bike Clay render low-poly"><img class="myImg" src="img/img_14_small.jpg" width="320" height="240"/></a>
+		</div>
+
+		<div class="projects">
+			<a href="img/img_15.jpg" data-lightbox="gallery" data-title="Chair Clay render"><img class="myImg" src="img/img_15_small.jpg" width="320" height="240"/></a>
+		</div>
+
+		<div class="projects">
+			<a href="img/img_16.jpg" data-lightbox="gallery" data-title="Flat Clay render"><img class="myImg" src="img/img_16_small.jpg" width="320" height="240"/></a>
+		</div>
+
+		<div class="projects">
+			<a href="img/img_17.jpg" data-lightbox="gallery" data-title="Cottage Clay render"><img class="myImg" src="img/img_17_small.jpg" width="320" height="240"/></a>
+		</div>
+
+	</div>
+
+	<div id="contact">
+		<div class="tophead">Let's talk</div>
+			<br>
+			<hr size="1" width="30" noshade color="black" align="left">
+			<br>
+		<div class="text2">
+			Rafal Penkala<br>5037 Bergen<br>Tel: 450-661-83<br>raf.tricity@gmail.com
+		</div>
+
+		<form>
+			<input type="text" placeholder="name" onfocus="this.placeholder=''" onblur="this.placeholder='name'"><br>
+
+			<input type="text" placeholder="e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'"><br>
+			
+			<input type="text" placeholder="subject" onfocus="this.placeholder=''" onblur="this.placeholder='subject'"><br>
+
+			<input type="text" placeholder="message" onfocus="this.placeholder=''" onblur="this.placeholder='message'"><br>
+
+			<input type="submit" value="SEND">
+		</form>	
+	</div>	
+
+	<footer>
+		
+		<div class="arrow">
+			  <a href="#" class="scrollup"><i class="icon-up-open"></i></a>
+		</div>
+
+		<a href="#" class="scrollup">Back to Top</a>
+
+		<div class="footer">Bergen3d.com &copy; 2017 All rights reserverd</div>
+
+
+	</footer>
+
+	</div>
+
+</body>
+</html>
